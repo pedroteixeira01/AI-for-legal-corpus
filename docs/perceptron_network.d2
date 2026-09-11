@@ -1,0 +1,82 @@
+direction: right
+
+# Entradas
+x1: "x₁" {
+  shape: circle
+  style.fill: "#3498DB"
+  style.font-color: "#FFFFFF"
+}
+
+x2: "x₂" {
+  shape: circle
+  style.fill: "#3498DB"
+  style.font-color: "#FFFFFF"
+}
+
+x3: "x₃" {
+  shape: circle
+  style.fill: "#3498DB"
+  style.font-color: "#FFFFFF"
+}
+
+bias: "+1\n(bias)" {
+  shape: circle
+  style.fill: "#95A5A6"
+  style.font-color: "#FFFFFF"
+}
+
+# Função de Soma
+Soma: "Σ\nFunção de\nSoma" {
+  shape: circle
+  style.fill: "#E67E22"
+  style.font-color: "#FFFFFF"
+  style.bold: true
+}
+
+# Função de Ativação
+Ativacao: "Função de\nAtivação\nφ(·)" {
+  shape: diamond
+  style.fill: "#9B59B6"
+  style.font-color: "#FFFFFF"
+  style.bold: true
+}
+
+# Saída
+Saida: "Saída\n(y)" {
+  shape: circle
+  style.fill: "#27AE60"
+  style.font-color: "#FFFFFF"
+}
+
+# Conexões com pesos sinápticos
+x1 -> Soma: "w₁" {
+  style.stroke: "#2C3E50"
+  style.font-color: "#2C3E50"
+}
+
+x2 -> Soma: "w₂" {
+  style.stroke: "#2C3E50"
+  style.font-color: "#2C3E50"
+}
+
+x3 -> Soma: "w₃" {
+  style.stroke: "#2C3E50"
+  style.font-color: "#2C3E50"
+}
+
+bias -> Soma: "b" {
+  style.stroke: "#7F8C8D"
+  style.font-color: "#7F8C8D"
+  style.stroke-dash: 3
+}
+
+Soma -> Ativacao: "z = Σ(wᵢxᵢ) + b"
+
+Ativacao -> Saida: "y = φ(z)"
+
+# Nota explicativa
+Legenda: "Perceptron:\ncada entrada xᵢ é multiplicada\npor seu peso sináptico wᵢ,\nsomada com o bias,\ne passada pela função\nde ativação" {
+  shape: text
+  style.italic: true
+  style.font-size: 13
+}

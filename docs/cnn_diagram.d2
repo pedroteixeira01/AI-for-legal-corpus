@@ -1,0 +1,97 @@
+# Entrada
+Entrada: "Imagem de\nEntrada\n(32x32x1)" {
+  style.fill: "#ECF0F1"
+}
+
+# Bloco Convolucional 1
+Bloco1: "Bloco Convolucional 1" {
+  style.fill: "#D6EAF8"
+  style.stroke: "#3498DB"
+
+  Conv1: "Convolução\n(Filtros 5x5)\n6 filtros" {
+    shape: rectangle
+    style.fill: "#3498DB"
+    style.font-color: "#FFFFFF"
+  }
+
+  Ativacao1: "Ativação\n(Tanh/ReLU)" {
+    shape: rectangle
+    style.fill: "#5DADE2"
+    style.font-color: "#FFFFFF"
+  }
+
+  Pool1: "Pooling\n(Average Pool 2x2)" {
+    shape: rectangle
+    style.fill: "#2874A6"
+    style.font-color: "#FFFFFF"
+  }
+
+  Conv1 -> Ativacao1 -> Pool1
+}
+
+# Bloco Convolucional 2
+Bloco2: "Bloco Convolucional 2" {
+  style.fill: "#D5F5E3"
+  style.stroke: "#27AE60"
+
+  Conv2: "Convolução\n(Filtros 5x5)\n16 filtros" {
+    shape: rectangle
+    style.fill: "#27AE60"
+    style.font-color: "#FFFFFF"
+  }
+
+  Ativacao2: "Ativação\n(Tanh/ReLU)" {
+    shape: rectangle
+    style.fill: "#52BE80"
+    style.font-color: "#FFFFFF"
+  }
+
+  Pool2: "Pooling\n(Average Pool 2x2)" {
+    shape: rectangle
+    style.fill: "#1E8449"
+    style.font-color: "#FFFFFF"
+  }
+
+  Conv2 -> Ativacao2 -> Pool2
+}
+
+# Flatten
+Flatten: "Flatten\n(Achatamento do\nmapa de características)" {
+  shape: parallelogram
+  style.fill: "#EAECEE"
+}
+
+# Camadas Totalmente Conectadas
+FC: "Camadas Totalmente\nConectadas (Fully Connected)" {
+  style.fill: "#F5EEF8"
+  style.stroke: "#9B59B6"
+
+  FC1: "FC1\n(120 neurônios)" {
+    shape: rectangle
+    style.fill: "#9B59B6"
+    style.font-color: "#FFFFFF"
+  }
+
+  FC2: "FC2\n(84 neurônios)" {
+    shape: rectangle
+    style.fill: "#8E44AD"
+    style.font-color: "#FFFFFF"
+  }
+
+  FC1 -> FC2
+}
+
+# Saída
+Saida: "Softmax\n(Classificação Final)\nex: 10 classes\n(dígitos 0-9)" {
+  shape: rectangle
+  style.fill: "#E74C3C"
+  style.font-color: "#FFFFFF"
+  style.bold: true
+}
+
+# Conexões principais
+Entrada -> Bloco1.Conv1
+Bloco1.Pool1 -> Bloco2.Conv2
+Bloco2.Pool2 -> Flatten
+Flatten -> FC.FC1
+FC.FC2 -> Saida

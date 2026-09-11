@@ -1,0 +1,284 @@
+# =============================================================
+#  Pipeline de ingestão de documentos PDF
+#  Cliente -> API -> Extração -> Anonimização -> Chunking -> JSON
+#
+#  Renderizar:  d2 pipeline_pdf.d2 pipeline_pdf.svg
+#  Assistir:    d2 --watch pipeline_pdf.d2
+# =============================================================
+
+direction: down
+
+vars: {
+  d2-config: {
+    layout-engine: dagre
+    theme-id: 300
+    pad: 40
+  }
+}
+
+classes: {
+  artefato: {
+    shape: page
+    style: {
+      fill: "#FFF8E1"
+      stroke: "#B8860B"
+      stroke-width: 2
+      shadow: true
+    }
+  }
+  camada: {
+    style: {
+      fill: "#F5F7FA"
+      stroke: "#37474F"
+      stroke-width: 2
+      border-radius: 10
+      font-size: 18
+      bold: true
+    }
+  }
+  etapa: {
+    style: {
+      fill: "#FFFFFF"
+      stroke: "#546E7A"
+      stroke-width: 1
+      border-radius: 6
+    }
+  }
+  decisao: {
+    shape: diamond
+    style: {
+      fill: "#FFF3E0"
+      stroke: "#E65100"
+      stroke-width: 2
+    }
+  }
+  apoio: {
+    style: {
+      fill: "#EDE7F6"
+      stroke: "#5E35B1"
+      stroke-width: 1
+      stroke-dash: 3
+      border-radius: 6
+    }
+  }
+  erro: {
+    style: {
+      fill: "#FDECEA"
+      stroke: "#C62828"
+      stroke-width: 2
+      border-radius: 6
+    }
+  }
+}
+
+# -------------------------------------------------------------
+# 1. Cliente
+# -------------------------------------------------------------
+cliente: Cliente {
+  class: camada
+
+  usuario: Usuário {
+    shape: person
+    style: {
+      fill: "#FFFFFF"
+      stroke: "#1A73E8"
+    }
+  }
+
+  upload: "Formulário de upload\n(drag & drop)" {
+    class: etapa
+  }
+
+  pdf: "documento.pdf" {
+    class: artefato
+  }
+
+  usuario -> upload -> pdf
+}
+
+# -------------------------------------------------------------
+# 2. Camada de API
+# -------------------------------------------------------------
+api: "API — FastAPI" {
+  class: camada
+
+  rota: "POST /v1/documentos:processar\nmultipart/form-data" {
+    class: etapa
+  }
+
+  guarda: "Válido?\nMIME • tamanho • nº páginas" {
+    class: decisao
+  }
+
+  erro: "HTTP 415 / 422\n{ codigo, detalhe }" {
+    class: erro
+  }
+
+  orquestrador: "Orquestrador do pipeline\n(streaming de bytes, sem persistir em disco)" {
+    class: etapa
+    style.bold: true
+  }
+
+  rota -> guarda
+  guarda -> erro: não
+  guarda -> orquestrador: sim
+}
+
+# -------------------------------------------------------------
+# 3. Motor de extração
+# -------------------------------------------------------------
+extracao: "① Motor de Extração" {
+  class: camada
+
+  triagem: "Possui camada\nde texto?" {
+    class: decisao
+  }
+
+  nativo: "Parser nativo\nPyMuPDF / pdfplumber" {
+    class: etapa
+  }
+
+  ocr: "Fallback OCR\nTesseract (por-BR), 300 dpi" {
+    class: etapa
+  }
+
+  layout: "Reconstrução de leitura\ncolunas • tabelas • cabeçalho/rodapé" {
+    class: etapa
+  }
+
+  triagem -> nativo: sim (PDF digital)
+  triagem -> ocr: não (PDF escaneado)
+  nativo -> layout
+  ocr -> layout
+}
+
+# -------------------------------------------------------------
+# 4. Regex / Anonimização
+# -------------------------------------------------------------
+anonimizacao: "② Regex / Anonimização" {
+  class: camada
+
+  catalogo: "Catálogo de padrões\nCPF • CNPJ • OAB • CEP\ne-mail • telefone • nº processo (CNJ)" {
+    class: apoio
+  }
+
+  deteccao: "Detecção\nregex + validação de dígito verificador" {
+    class: etapa
+  }
+
+  mascara: "Mascaramento determinístico\n<CPF_01>, <NOME_03>, <EMAIL_02>" {
+    class: etapa
+  }
+
+  cofre: "Mapa de entidades\n(offsets, reversível — fora do payload)" {
+    class: artefato
+  }
+
+  catalogo -> deteccao: carrega
+  deteccao -> mascara
+  mascara -> cofre: registra
+}
+
+# -------------------------------------------------------------
+# 5. Chunking
+# -------------------------------------------------------------
+chunking: "③ Algoritmo de Chunking" {
+  class: camada
+
+  normaliza: "Normalização\nde-hifenização • espaços • quebras" {
+    class: etapa
+  }
+
+  split: "Split hierárquico\nseções → parágrafos → sentenças" {
+    class: etapa
+  }
+
+  janela: "Janela por tokens\nmax_tokens = 512 • overlap = 64" {
+    class: etapa
+  }
+
+  metadados: "Metadados por chunk\npágina • seção • índice • hash" {
+    class: apoio
+  }
+
+  normaliza -> split -> janela
+  janela -> metadados: enriquece
+}
+
+# -------------------------------------------------------------
+# 6. Serialização e resposta
+# -------------------------------------------------------------
+serializacao: "④ Serialização\nmontagem + validação de schema (Pydantic)" {
+  class: etapa
+  style: {
+    fill: "#E8F5E9"
+    stroke: "#2E7D32"
+    stroke-width: 2
+  }
+}
+
+resposta: "HTTP 200 · application/json\n{\n  doc_id, paginas, origem: \"nativo|ocr\",\n  chunks: [ { id, texto, metadados } ]\n}" {
+  class: artefato
+}
+
+# -------------------------------------------------------------
+# Fluxo principal
+# -------------------------------------------------------------
+cliente.pdf -> api.rota: "upload do PDF" {
+  style: {
+    stroke: "#1A73E8"
+    stroke-width: 3
+    bold: true
+  }
+}
+
+api.orquestrador -> extracao.triagem: "bytes do PDF" {
+  style: {
+    stroke: "#37474F"
+    stroke-width: 3
+  }
+}
+
+extracao.layout -> anonimizacao.deteccao: "texto bruto + posições" {
+  style: {
+    stroke: "#37474F"
+    stroke-width: 3
+  }
+}
+
+anonimizacao.mascara -> chunking.normaliza: "texto anonimizado" {
+  style: {
+    stroke: "#37474F"
+    stroke-width: 3
+  }
+}
+
+chunking.janela -> serializacao: "lista de chunks" {
+  style: {
+    stroke: "#37474F"
+    stroke-width: 3
+  }
+}
+
+serializacao -> resposta: "payload validado" {
+  style: {
+    stroke: "#2E7D32"
+    stroke-width: 3
+  }
+}
+
+resposta -> cliente.usuario: "consome o JSON" {
+  style: {
+    stroke: "#B8860B"
+    stroke-width: 3
+    stroke-dash: 4
+  }
+}
+
+api.erro -> cliente.usuario: "resposta de erro" {
+  style: {
+    stroke: "#C62828"
+    stroke-width: 2
+    stroke-dash: 4
+  }
+}

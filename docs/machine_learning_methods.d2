@@ -1,0 +1,62 @@
+direction: down
+
+ML: "Machine Learning" {
+  shape: rectangle
+  style.bold: true
+  style.fill: "#2C3E50"
+  style.font-color: "#FFFFFF"
+}
+
+Supervisionado: "Aprendizado\nSupervisionado" {
+  style.fill: "#3498DB"
+  style.font-color: "#FFFFFF"
+}
+
+NaoSupervisionado: "Aprendizado Não\nSupervisionado" {
+  style.fill: "#27AE60"
+  style.font-color: "#FFFFFF"
+}
+
+PorReforco: "Aprendizado\nPor Reforço" {
+  style.fill: "#E67E22"
+  style.font-color: "#FFFFFF"
+}
+
+# Ramificações do Supervisionado
+Classificacao: "Classificação\n(ex: SVM, Árvores,\nRandom Forest)" {
+  style.fill: "#AED6F1"
+}
+
+Regressao: "Regressão\n(ex: Regressão Linear,\nRegressão Logística)" {
+  style.fill: "#AED6F1"
+}
+
+# Ramificações do Não Supervisionado
+Agrupamento: "Agrupamento\n(ex: K-Means,\nDBSCAN)" {
+  style.fill: "#A9DFBF"
+}
+
+ReducaoDimensionalidade: "Redução de\nDimensionalidade\n(ex: PCA, t-SNE)" {
+  style.fill: "#A9DFBF"
+}
+
+# Ramificação do Por Reforço
+AgentesEAmbientes: "Agentes e\nAmbientes\n(ex: Q-Learning,\nDeep Q-Networks)" {
+  style.fill: "#FAD7A0"
+}
+
+# Conexões principais
+ML -> Supervisionado
+ML -> NaoSupervisionado
+ML -> PorReforco
+
+# Conexões de Supervisionado
+Supervisionado -> Classificacao
+Supervisionado -> Regressao
+
+# Conexões de Não Supervisionado
+NaoSupervisionado -> Agrupamento
+NaoSupervisionado -> ReducaoDimensionalidade
+
+# Conexão de Por Reforço
+PorReforco -> AgentesEAmbientes

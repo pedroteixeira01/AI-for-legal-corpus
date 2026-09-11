@@ -1,0 +1,152 @@
+direction: right
+
+# ===== ENTRADA =====
+InputEmbedding: "Input\nEmbedding" {
+  shape: rectangle
+  style.fill: "#AED6F1"
+}
+
+InputPosEnc: "+\nPositional\nEncoding" {
+  shape: circle
+  style.fill: "#EAECEE"
+}
+
+InputEmbedding -> InputPosEnc
+
+# ===== ENCODER (Esquerda) =====
+Encoder: "ENCODER" {
+  style.fill: "#EBF5FB"
+  style.stroke: "#2E86C1"
+  style.font-color: "#1B4F72"
+
+  EncMHA: "Multi-Head\nAttention" {
+    shape: rectangle
+    style.fill: "#3498DB"
+    style.font-color: "#FFFFFF"
+    style.bold: true
+  }
+
+  EncAddNorm1: "Add & Norm" {
+    shape: rectangle
+    style.fill: "#D4E6F1"
+  }
+
+  EncFFN: "Feed\nForward" {
+    shape: rectangle
+    style.fill: "#2980B9"
+    style.font-color: "#FFFFFF"
+  }
+
+  EncAddNorm2: "Add & Norm" {
+    shape: rectangle
+    style.fill: "#D4E6F1"
+  }
+
+  EncMHA -> EncAddNorm1 -> EncFFN -> EncAddNorm2
+
+  EncNota: "Repetido N vezes\n(N blocos empilhados)" {
+    shape: text
+    style.italic: true
+    style.font-size: 12
+  }
+}
+
+InputPosEnc -> Encoder.EncMHA
+
+# ===== SAÍDA DO ENCODER =====
+EncoderOutput: "Representação\nContextual\n(Saída do Encoder)" {
+  shape: rectangle
+  style.fill: "#A9DFBF"
+}
+
+Encoder.EncAddNorm2 -> EncoderOutput
+
+# ===== DECODER (Direita) =====
+Decoder: "DECODER" {
+  style.fill: "#FDEDEC"
+  style.stroke: "#C0392B"
+  style.font-color: "#78281F"
+
+  DecMaskedMHA: "Masked\nMulti-Head\nAttention" {
+    shape: rectangle
+    style.fill: "#E74C3C"
+    style.font-color: "#FFFFFF"
+    style.bold: true
+  }
+
+  DecAddNorm1: "Add & Norm" {
+    shape: rectangle
+    style.fill: "#FADBD8"
+  }
+
+  DecMHA: "Multi-Head\nAttention\n(Cross-Attention)" {
+    shape: rectangle
+    style.fill: "#CB4335"
+    style.font-color: "#FFFFFF"
+    style.bold: true
+  }
+
+  DecAddNorm2: "Add & Norm" {
+    shape: rectangle
+    style.fill: "#FADBD8"
+  }
+
+  DecFFN: "Feed\nForward" {
+    shape: rectangle
+    style.fill: "#A93226"
+    style.font-color: "#FFFFFF"
+  }
+
+  DecAddNorm3: "Add & Norm" {
+    shape: rectangle
+    style.fill: "#FADBD8"
+  }
+
+  DecMaskedMHA -> DecAddNorm1 -> DecMHA -> DecAddNorm2 -> DecFFN -> DecAddNorm3
+
+  DecNota: "Repetido N vezes\n(N blocos empilhados)" {
+    shape: text
+    style.italic: true
+    style.font-size: 12
+  }
+}
+
+# Conexão de Cross-Attention (Encoder -> Decoder)
+EncoderOutput -> Decoder.DecMHA: "K, V\n(Chaves e Valores)" {
+  style.stroke: "#27AE60"
+  style.stroke-dash: 4
+  style.font-color: "#27AE60"
+}
+
+# ===== ENTRADA DO DECODER =====
+OutputEmbedding: "Output\nEmbedding\n(shifted right)" {
+  shape: rectangle
+  style.fill: "#F5B7B1"
+}
+
+OutputPosEnc: "+\nPositional\nEncoding" {
+  shape: circle
+  style.fill: "#EAECEE"
+}
+
+OutputEmbedding -> OutputPosEnc -> Decoder.DecMaskedMHA
+
+# ===== SAÍDA FINAL =====
+LinearLayer: "Linear" {
+  shape: rectangle
+  style.fill: "#D2B4DE"
+}
+
+Softmax: "Softmax" {
+  shape: rectangle
+  style.fill: "#8E44AD"
+  style.font-color: "#FFFFFF"
+  style.bold: true
+}
+
+Probabilidades: "Probabilidades\nde Saída\n(próximo token)" {
+  shape: rectangle
+  style.fill: "#EAECEE"
+}
+
+Decoder.DecAddNorm3 -> LinearLayer -> Softmax -> Probabilidades

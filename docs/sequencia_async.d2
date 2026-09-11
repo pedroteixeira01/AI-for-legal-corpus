@@ -1,0 +1,133 @@
+# =============================================================
+#  Diagrama de Sequência — Natureza Assíncrona do Pipeline
+#  Mostra a linha do tempo das chamadas e como a API nunca
+#  bloqueia a thread principal enquanto o texto é processado.
+#
+#  Renderizar:  d2 sequencia_async.d2 sequencia_async.svg
+# =============================================================
+
+shape: sequence_diagram
+
+vars: {
+  d2-config: {
+    layout-engine: dagre
+    theme-id: 0
+  }
+}
+
+classes: {
+  sync: {
+    style: {
+      stroke: "#1A73E8"
+      stroke-width: 2
+    }
+  }
+  async-fire: {
+    style: {
+      stroke: "#8E24AA"
+      stroke-width: 2
+      stroke-dash: 2
+    }
+  }
+  async-return: {
+    style: {
+      stroke: "#B8860B"
+      stroke-width: 2
+      stroke-dash: 5
+    }
+  }
+  interno: {
+    style: {
+      stroke: "#546E7A"
+      stroke-width: 2
+    }
+  }
+  livre: {
+    style: {
+      stroke: "#2E7D32"
+      stroke-width: 2
+      stroke-dash: 3
+    }
+  }
+}
+
+# --- Atores / participantes ---------------------------------
+Cliente: Cliente
+API: "API (event loop)"
+Fila: "Fila\n(broker)"
+Worker: "Worker assíncrono"
+Cache: "Cache / BD\n(status)"
+
+# --- t0: requisição chega ------------------------------------
+Cliente -> API: "t=0ms · POST /documentos:processar (upload PDF)" {
+  class: sync
+}
+
+API -> Fila: "t=8ms · publica tarefa {task_id} — fire-and-forget" {
+  class: async-fire
+}
+
+API -> Cache: "t=10ms · grava status: \"pendente\"" {
+  class: sync
+}
+
+API -> Cliente: "t=15ms · 202 Accepted { task_id }" {
+  class: async-return
+}
+
+API -> API: "thread livre — atende outras requisições\n(nenhum wait no processamento do PDF)" {
+  class: livre
+}
+
+# --- processamento em paralelo, fora da requisição HTTP ------
+processamento: "processamento assíncrono (Worker) — ocorre em paralelo, sem bloquear a API" {
+  Fila -> Worker: "t=20ms · entrega tarefa {task_id}" {
+    class: async-fire
+  }
+
+  Worker -> Cache: "t=25ms · status: \"em_processamento\"" {
+    class: sync
+  }
+
+  Worker -> Worker: "extração → anonimização → chunking\n(pode levar vários segundos)" {
+    class: interno
+  }
+
+  Worker -> Cache: "t=8400ms · grava resultado + status: \"concluido\"" {
+    class: sync
+  }
+}
+
+# --- cliente faz polling enquanto isso -----------------------
+polling: "cliente consulta o status (repete até concluir) — API responde instantaneamente, sem esperar o worker" {
+  Cliente -> API: "t=1000ms · GET /status/{task_id}" {
+    class: sync
+  }
+  API -> Cache: "consulta status" {
+    class: sync
+  }
+  Cache -> API: "\"em_processamento\"" {
+    class: async-return
+  }
+  API -> Cliente: "200 { status: \"processing\" }" {
+    class: async-return
+  }
+}
+
+# --- consulta final: resultado pronto -------------------------
+Cliente -> API: "t=8500ms · GET /status/{task_id}" {
+  class: sync
+}
+
+API -> Cache: "consulta status" {
+  class: sync
+}
+
+Cache -> API: "\"concluido\" + chunks[]" {
+  class: async-return
+}
+
+API -> Cliente: "200 { status: \"concluido\", chunks: [...] }" {
+  class: async-return
+  style.stroke-width: 3
+}
