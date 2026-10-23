@@ -1,6 +1,7 @@
 from app.anonymization.service import get_anonymizer
 from app.chunking.service import get_chunker
 from app.evaluation.service import get_evaluator
+from app.ingestion.service import normalizar_ligaduras
 from app.pipeline.schemas import AnonimizacaoInfo, PipelineExecutionResult
 from app.summarization.service import get_summarizer
 
@@ -13,7 +14,7 @@ def executar_pipeline(
 ) -> PipelineExecutionResult:
     """Orquestra o pipeline completo: sanitização (LGPD) -> chunking -> síntese -> avaliação ROUGE."""
     anonymizer = get_anonymizer()
-    texto_limpo = anonymizer.sanitizar(texto_original)
+    texto_limpo = anonymizer.sanitizar(normalizar_ligaduras(texto_original))
 
     chunker = get_chunker(chunk_size=chunk_size, overlap=overlap)
     lista_chunks = chunker.chunk_text(texto_limpo)

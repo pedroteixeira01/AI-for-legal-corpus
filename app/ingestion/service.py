@@ -1,6 +1,24 @@
+import re
+
 import pymupdf
 import pymupdf4llm
 from fastapi import HTTPException, UploadFile
+
+# Ligaduras tipográficas que alguns PDFs codificam como caracteres de uso privado (ou
+# como os glifos de apresentação U+FB01/U+FB02) e que a extração entrega como lixo,
+# geralmente seguidos de um espaço espúrio: "instituições \ue00b nanceiras".
+LIGADURAS = {
+    "\ue000": "fi", "\ue00b": "fi", "\ufb01": "fi",
+    "\ue001": "fl", "\ue00c": "fl", "\ufb02": "fl",
+    "\ue00d": "Th",
+    "\ue002": "ff", "\ue00e": "ff",
+}  # fmt: skip
+_RE_LIGADURA = re.compile("([" + "".join(LIGADURAS) + "]) ?")
+
+
+def normalizar_ligaduras(texto: str) -> str:
+    """Converte os caracteres de ligadura em letras, consumindo o espaço espúrio logo após eles."""
+    return _RE_LIGADURA.sub(lambda m: LIGADURAS[m.group(1)], texto)
 
 
 def extrair_texto_pdf(conteudo: bytes) -> str:
@@ -25,7 +43,7 @@ def extrair_texto_pdf(conteudo: bytes) -> str:
     if not texto.strip():
         raise HTTPException(status_code=422, detail="Nenhum texto pôde ser extraído do PDF.")
 
-    return texto
+    return normalizar_ligaduras(texto)
 
 
 async def processar_upload(file: UploadFile) -> str:
