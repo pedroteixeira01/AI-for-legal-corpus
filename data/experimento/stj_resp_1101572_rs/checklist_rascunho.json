@@ -1,0 +1,24 @@
+{
+  "tese": [
+    "proporcional"
+  ],
+  "objeto": [
+    "dpvat"
+  ],
+  "condicao": [
+    "invalidez parcial",
+    "invalidez permanente parcial"
+  ],
+  "fundamento": [
+    "tabela"
+  ],
+  "dispositivo": [
+    "nego provimento",
+    "negou provimento",
+    "negar provimento",
+    "negaram provimento",
+    "desprovido",
+    "improvido",
+    "nao provido"
+  ]
+}

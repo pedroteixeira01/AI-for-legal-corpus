@@ -1,0 +1,137 @@
+RELATÓRIO
+O Sr. Ministro Luis Felipe Salomão: 1.Vagner Adalberto dos S. Brandão & CIA Ltda. ajuizou ação declaratória de cancelamento de protesto cumulada com reparação por danos morais em face de Brum e Saraiva Ltda. e Banco do Brasil S/A. Alega inexistência de causa para emissão das duas duplicatas levadas a protesto. Aduz ter desistido do negócio jurídico antes da sua validade, em virtude da demora na entrega da mercadoria. Nesse contexto, pleiteia indenização a título de ressarcimento por danos morais causados por protesto indevido, o qual acarretou a inscrição do seu nome em órgão de proteção ao crédito - SERASA.
+Após excluído da lide o réu Brum e Saraiva, o Juízo de Direito da 3ª Vara Cível da Comarca de Pelotas/RS julgou procedentes os pedidos e determinou o cancelamento do protesto, condenando os réus ao pagamento de indenização por danos morais no valor de 10 salários vigentes ao tempo de prolação da sentença, com juros de mora e correção monetária nos termos das súmulas 54 e 362 do STJ, respectivamente (fls. 70-76).
+O Banco do Brasil S/A interpôs recurso de apelação, ao qual foi negado provimento, nos termos da seguinte ementa (fls. 99-104):
+APELAÇÃO CÍVEL. RESPONSABILIDADE CIVIL. INDENIZAÇÃO. DANOS MORAIS. CANCELAMENTO DE PROTESTO. ENDOSSO TRANSLATIVO. LEGITIMIDADE DO BANCO ENDOSSATÁRIO. SENTENÇA MANTIDA. REJEITARAM A PRELIMINAR E NEGARAM PROVIMENTO AO AGRAVO RETIDO E AO APELO. UNÂNIME.
+Opostos embargos de declaração, foram eles rejeitados (fls. 116-120).
+Sobreveio recurso especial interposto por Banco do Brasil S/A, apoiado nas alíneas “a” e “c” do permissivo constitucional, no qual se aponta, além de dissídio jurisprudencial, violação dos artigos 535, II, e 458 do CPC; e art. 13, § 4º, da Lei 5.474/68.
+Aduz que, em casos de endosso translativo, por se tratar de cobrança simples, os comandos para tal desiderato são automáticos, nos termos da Lei de Duplicatas, que autoriza a remessa dos títulos a cartório depois de transcorridos 5 (cinco) dias do vencimento das duplicatas.
+Nesses termos, requer seja declarada a nulidade do acórdão recorrido por negativa de prestação jurisdicional ou reconhecida sua ilegitimidade, a fim de não ser responsabilizado pelos danos morais.
+Pleiteia, por fim, o afastamento da condenação aos ônus sucumbenciais ou, subsidiariamente, sua compensação.
+Sem contrarrazões, o especial foi admitido (fl. 152).
+Ascendendo os autos a esta Corte, e verificando a existência de multiplicidade de feitos a versar, de um modo geral, acerca da responsabilidade da instituição financeira que, recebendo título por endosso translativo, leva-o indevidamente a protesto, afetei o julgamento da controvérsia à apreciação da Segunda Seção, nos termos do art. 543-C do CPC e Resolução n. 8/2008 do STJ.
+A Federação Brasileira de Bancos - FEBRABAN manifestou-se como amicus curiae pela não responsabilização do endossatário por vícios na criação ou circulação da cártula. Assim, na sistemática do instituto do endosso, prevalece a regra da inoponibilidade das exceções pessoais a terceiros de boa-fé, configurando o protesto do título um exercício regular de direito, inclusive para preservar o direito de regresso contra o endossante (fls. 181-231).
+O Ministério Público Federal, mediante parecer oferecido pelo Subprocurador-Geral da República Washington Bolívar Júnior, opina pelo não provimento do recurso especial. Entende o Parquet que, para o endossatário realizar o protesto da cártula, deve antes se certificar se o título realmente guarda correspondência com a causa de emissão, cautela que não foi devidamente observada no caso em apreço (fls. 233-238).
+É o relatório.
+VOTO
+O Sr. Ministro Luis Felipe Salomão (Relator): 2. O presente caso submetido ao rito do art. 543-C do CPC circunscreve-se ao tema relativo à responsabilidade de quem recebe título de crédito por endosso translativo e leva-o a protesto.
+2.1. Ressalto, nesse primeiro momento, haver diferença substancial entre o endosso translativo e o endosso-mandato. Com este, “transmite-se ao endossatário-mandatário, assim investido de mandato e da posse do título, o poder de efetuar a cobrança, dando quitação de seu valor” (REQUIÃO, Rubens. Curso de direito comercial. 2º volume. São Paulo: Saraiva, 2010, p. 495). Aquele, o endosso translativo, que é espécie de endosso próprio e pleno, é o ato cambiário mediante o qual “o endossador transfere ao endossatário o título e, em consequência, os direitos nele incorporados” (Ibidem, p. 492).
+2.2. Nesse passo, cumpre, no segundo momento, esclarecer que há também diferenças notáveis entre duplicata sem causa (“fria” ou simulada) e aquela cujo negócio jurídico subjacente, posteriormente, tenha se desfeito ou tenha sido descumprido.
+É de se notar que a “causalidade” da duplicata reside apenas na sua origem, mercê do fato de somente poder ser emitida para a documentação de crédito nascido de venda mercantil ou de prestação de serviços.
+Porém, a duplicata mercantil é título de crédito, na sua generalidade, como qualquer outro, estando sujeita às regras de direito cambial, nos termos do art. 25 da Lei n. 5.474/68, ressaindo daí, notadamente, os princípios da cartularidade, abstração, autonomia das obrigações cambiais e inoponibilidade das exceções pessoais a terceiros de boa-fé.
+Vale dizer, conquanto a duplicata mercantil seja “causal” na sua emissão, sua circulação, mormente após o aceite do sacado, rege-se pelo princípio da abstração, desprendendo-se de sua causa original, sendo por isso inoponíveis exceções pessoais a terceiros de boa-fé, como o desfazimento do negócio jurídico subjacente que dera lastro à emissão da duplicata.
+Esse também é o preciso entendimento de Amador Paes de Almeida, que bem identifica a causalidade da duplicata apenas na sua emissão, desaparecendo esse traço com o aceite do sacado e com a circulação mediante endosso:
+Título eminentemente causal, tem seu alicerce no contrato de compra e venda mercantil ou na prestação de serviços. Sem estes, como adverte Carlos Fulgêncio da Cunha Peixoto, é inexistente. Conquanto mantenha traços comuns com a letra de câmbio, desta distingue-se por ter sua origem necessariamente presa a um contrato mercantil - disso decorrendo sua natureza causal. Daí só admitir, com relação ao sacador, as exceções que se fundarem em devolução da mercadoria, vícios, diferenças de preço, etc., exceções, entretanto, jamais arguíveis contra terceiros. Todavia, de causal torna-se abstrato por força do aceite, desvinculando-se do negócio jurídico subjacente sobretudo quando se estabelece a circulação por meio do endosso (ALMEIDA, Amador Paes de. Teoria e prática dos títulos de crédito. 29 ed. São Paulo: Saraiva, 2011, p. 196).
+Fábio Ulhoa Coelho, na esteira do magistério de Pontes de Miranda, faz o mesmo alerta, verbis:
+[...] Claro que, sendo endossado a terceiro de boa-fé, em razão do regime cambiário aplicável à circulação do título (LD, art. 25), a falta de causa legítima não poderá ser oposta pelo sacado perante o endossatário. A ineficácia do título como duplicata, em função da irregularidade do saque, somente pode ser invocada contra o sacador, o endossatário-mandatário ou terceiros de má-fé (quer dizer, os que conhecem o vício na emissão do título).
+Da causalidade da duplicata, note-se bem, não é correto concluir qualquer limitação ou outra característica atinente à negociação do crédito registrado pelo título. A duplicata mercantil circula como qualquer outro título de crédito, sujeita ao regime do direito cambiário. Isso significa, em concreto, que ela comporta endosso, que o endossante responde pela solvência do devedor, que o executado não pode opor contra terceiros de boa-fé exceções pessoais, que as obrigações dos avalistas são autônomas em relação às dos avalizados, etc. Não é jurídico pretender vinculação entre a duplicata e a compra e venda mercantil, que lhe deu ensejo, maior do que a existente entre a letra de câmbio, a nota promissória ou o cheque e as respectivas relações originárias. (Curso de direito comercial, volume I: direito de empresa. 12ª ed. São Paulo: Saraiva, 2008, p. 459)
+Ou seja, o desfazimento do negócio jurídico subjacente, depois de concluída a emissão da duplicata, sobretudo com o “aceite”, não torna o título desprovido de causa, aplicando-se - desde o primeiro endosso - a regra da inoponibilidade das exceções pessoais a terceiros de boa-fé.
+Vale dizer, o que confere lastro à duplicata mercantil que conta com “aceite”, como título de crédito apto à circulação, é apenas a existência do negócio jurídico subjacente, e não o seu adimplemento, o qual se consubstancia exceção pessoal do sacado oponível apenas ao credor originário, mas não a terceiros de boa-fé.
+Nesse sentido já se manifestou a jurisprudência desta Corte:
+DIREITO COMERCIAL. DUPLICATA ACEITA E ENDOSSADA EM GARANTIA PIGNORATÍCIA. EXECUÇÃO PELO ENDOSSATÁRIO DE BOA-FÉ. OPOSIÇÃO PELO SACADO. IMPOSSIBILIDADE. AUTONOMIA E ABSTRAÇÃO DO TÍTULO. DIREITO PROCESSUAL CIVIL. EMBARGOS DE DECLARAÇÃO. PREQUESTIONAMENTO. FINS NÃO PROCRASTINATÓRIOS. MULTA DO ART. 538, PARÁGRAFO ÚNICO, CPC. INAPLICABILIDADE.
+- A duplicata mercantil é título de crédito criado pelo direito brasileiro, disciplinada pela Lei 5.474/68, submetendo-se ao mesmo regime jurídico cambial dos demais títulos de crédito, sujeita, portanto, aos princípios da cartularidade, da literalidade e, principalmente, da autonomia das obrigações.
+- Nos termos do art. 15 da Lei n. 5.474/68, para execução judicial da duplicata basta o próprio título, desde que aceito. Assim, não se exige que o endossatário confira a regularidade do aceite, pois se trata de ato pelo qual o título transmuda de causal para abstrato, desvencilhando-se do negócio originário.
+- Ausente qualquer indício de má-fé por parte do endossatário, exigir que ele responda por fatos alheios ao negócio jurídico que o vinculam à duplicata contraria a própria essência do direito cambiário, aniquilando sua principal virtude, que é permitir a fácil e rápida circulação do crédito.
+- Embargos de declaração que tenham por fim o prequestionamento não se sujeitam à sanção do artigo 538, parágrafo único, do CPC. Súmula 98/STJ.
+Recurso especial conhecido e parcialmente provido.
+(REsp 1.102.227/SP, Rel. Ministra NANCY ANDRIGHI, TERCEIRA TURMA, julgado em 12/05/2009, DJe 29/05/2009)
+RECURSO ESPECIAL. COMERCIAL. TÍTULOS DE CRÉDITO. DUPLICATA. ACEITE. TEORIA DA APARÊNCIA. AUSÊNCIA DE ENTREGA DAS MERCADORIAS. EXCEÇÃO OPOSTA A TERCEIROS. PRINCÍPIO DA AUTONOMIA DAS CAMBIAIS. IMPOSSIBILIDADE.
+1. Ainda que a duplicata mercantil tenha por característica o vínculo à compra e venda mercantil ou prestação de serviços realizada, ocorrendo o aceite - como verificado nos autos -, desaparece a causalidade, passando o título a ostentar autonomia bastante para obrigar a recorrida ao pagamento da quantia devida, independentemente do negócio jurídico que lhe tenha dado causa;
+2. Em nenhum momento restou comprovado qualquer comportamento inadequado da recorrente, indicador de seu conhecimento quanto ao descumprimento do acordo realizado entre as partes originárias;
+3. Recurso especial provido.
+(REsp 668.682/MG, Rel. Ministro HÉLIO QUAGLIA BARBOSA, QUARTA TURMA, julgado em 13/02/2007, DJ 19/03/2007 p. 355)
+Tal entendimento foi por mim adotado na relatoria do REsp 261.170/SP, QUARTA TURMA, julgado em 4/8/2009.
+Em suma, em se tratando de alegação de desacerto comercial decorrente do negócio jurídico subjacente, o caso é de exceção pessoal inoponível ao endossatário de boa-fé, motivo pelo qual é lícito eventual protesto realizado pelo endossatário em razão do inadimplemento do sacado.
+Ademais, nessa hipótese, o protesto é medida que se impõe, como forma de resguardo do próprio direito de regresso do endossatário contra o endossante e avalistas, nos termos do que dispõe o art. 13, § 4º, da Lei n. 5.474/68, verbis:
+O portador que não tirar o protesto da duplicata, em forma regular e dentro do prazo da 30 (trinta) dias, contado da data de seu vencimento, perderá o direito de regresso contra os endossantes e respectivos avalistas.
+Assim, desfeito o negócio jurídico subjacente, depois de aperfeiçoada a emissão da duplicata, e contando com o “aceite”, tal fato somente pode ser alegado em face do credor originário, o qual arcará com todos os prejuízos decorrentes dos atos de cobrança do título, como o protesto.
+Esse sempre foi o entendimento da jurisprudência da Casa:
+DUPLICATA. ENDOSSO. PAGAMENTO FEITO PELO DEVEDOR DIRETAMENTE AO ENDOSSANTE. PROTESTO PRETENDIDO PELO BANCO ENDOSSATARIO.
+Aceita a duplicata e endossada, legitimado a receber o pagamento é o endossatário. O devedor que paga a quem não é o detentor do titulo, contentando-se com simples quitação em documento separado, corre o risco de ter de pagar segunda vez ao legitimo portador. Quem paga mal paga duas vezes.
+Protesto intentado pelo endossatário. Sua necessidade, para resguardo do direito cambiário de regresso contra o endossante. É, pois, ato licito, praticado no exercício regular de um direito.
+Lei 5.474, de 18.07.68, art. 13, par. 4º.
+Recurso especial conhecido e provido.
+(REsp 596/RS, Rel. Ministro ATHOS CARNEIRO, QUARTA TURMA, julgado em 10/10/1989, DJ 06/11/1989, p. 16.690, REPDJ 06/11/1989, p. 16.690)
+DUPLICATA NÃO ACEITA. ENDOSSO. PROTESTO. PEDIDO DE NULIDADE FUNDADO EM INADIMPLEMENTO DE OBRIGAÇÃO ASSUMIDA PELO SACADOR.
+A irregularidade na emissão da duplicata ou a inadimplência do emitente poderá ser utilmente argüida entre as partes originais.
+Endossado, entretanto, o titulo, cuja validade condiciona-se à observância dos requisitos de forma e não a regularidade do saque, poderá o endossatário exercer amplamente os direitos dele emergentes. No caso, o direito de regresso contra endossante.
+Protesto - direito de regresso.
+Juridicamente o protesto em nada afeta a posição do sacado que não aceitou. Entretanto, não podem ser ignoradas as enormes conseqüências que o comércio lhe empresta. Em atenção a isso, mantem-se o impedimento ao protesto, reconhecendo-se a inexistência de obrigação do sacado para com o emitente, mas ressalva-se, expressamente, o direito de regresso do endossatário.
+(REsp 2.166/RS, Rel. Ministro EDUARDO RIBEIRO, TERCEIRA TURMA, julgado em 29/05/1990, DJ 25/06/1990, p. 6.037)
+COMERCIAL. DUPLICATA. ENDOSSO. PROTESTO. DIREITO DE REGRESSO.
+I - A duplicata, uma vez endossada, sua validade condiciona-se à observância dos requisitos de forma e não à regularidade do saque, poderá o endossatário exercer amplamente os direitos dele emergentes. No caso, o direito de regresso contra o endossante e, ao menos para garantir esse efeito, o protesto do titulo se impõem. Esse, o entendimento que o STJ consolidou no aspecto.
+II - Recurso não conhecido.
+(REsp 15.623/SP, Rel. Ministro WALDEMAR ZVEITER, TERCEIRA TURMA, julgado em 24/03/1992, DJ 20/04/1992, p. 5.251)
+2.3. Coisa bem distinta é a inexistência de contrato de venda mercantil ou de prestação de serviços subjacente ao título de crédito, portanto, emitido sem lastro, hipótese em que há caracterização da simulação ou emissão de duplicata “fria”, prática, inclusive, considerada crime, nos termos do art. 172 do Código Penal.
+Nessa hipótese, a inexistência de lastro à emissão da duplicata pode ser observada pelo endossatário, porquanto, à falta de negócio jurídico subjacente, o título endossado está desprovido de “aceite” ou do comprovante da entrega da mercadoria/ prestação do serviço.
+A bem da verdade, a inexistência de causa à emissão de duplicata não consubstancia verdadeiramente exceção pessoal, mas vício de natureza formal para emissão do título, que o acompanha, portanto, desde o nascedouro e não se convola com endossos sucessivos. (REQUIÃO, Rubens. Curso de direito comercial. 2º volume. São Paulo: Saraiva, 2010, p. 517/518).
+Vale dizer, a regra da inoponibilidade das exceções pessoais a terceiros de boa-fé, prevista em vários diplomas legais, como no Decreto n. 2.044/1908, no Código Civil de 1916 e na Lei Uniforme de Genebra, não abarca os vícios de forma do título, extrínsecos ou intrínsecos, como a emissão de duplicata simulada, desvinculada de qualquer negócio jurídico e, ademais, sem aceite.
+Nesse sentido, confira-se precedente de minha relatoria, dentre muitos outros:
+DIREITO COMERCIAL. DUPLICATA DE PRESTAÇÃO DE SERVIÇOS. EMISSÃO IRREGULAR. SIMULAÇÃO. INOPONIBILIDADE DAS EXCEÇÕES PESSOAIS A ENDOSSATÁRIOS DE BOA-FÉ. NÃO-APLICAÇÃO. VÍCIO FORMAL INTRÍNSECO.
+1. O que o ordenamento jurídico brasileiro veda - e isso desde o Decreto n. 2.044/1908, passando-se pelo Código Civil de 1916 e, finalmente, chegando-se à Lei Uniforme de Genebra - é a oposição de exceções de natureza pessoal a terceiros de boa-fé, vedação que não abarca os vícios de forma do título, extrínsecos ou intrínsecos, como a emissão de duplicata simulada, desvinculada de qualquer negócio jurídico e, ademais, sem aceite ou protesto a lhe suprir a falta.
+2. Em relação à Duplicata - é até ocioso ressaltar -, a Lei n. 5.474/68 condiciona a sua emissão à realização de venda mercantil ou prestação de serviços, bem como a aceitação do sacado ou, na ausência, o protesto acompanhado de comprovante da realização do negócio subjacente, sem os quais estará configurado o vício de forma intrínseco, o qual poderá ser oposto pelo sacado a qualquer endossatário, ainda que de boa-fé.
+3. Recurso especial conhecido e improvido.
+(REsp 774.304/MT, Rel. Ministro LUIS FELIPE SALOMÃO, QUARTA TURMA, julgado em 05/10/2010, DJe 14/10/2010)
+Assim, cuidando-se de vício formal no título, como a inexistência de causa apta a conferir lastro à emissão, eventual protesto levado a efeito pelo endossatário, ainda que de boa fé, deve ser considerado indevido.
+Nessa hipótese, também não poderá alegar o endossatário a exigência legal do protesto para viabilizar-lhe o direito de regresso contra o endossante, porquanto, ao receber título evidentemente desprovido de causa, assumiu os riscos da inadimplência.
+Ressalva-se apenas o direito de regresso do endossatário contra o endossante independentemente do protesto.
+Nesse sentido é a antiga jurisprudência da Corte:
+COMERCIAL. DUPLICATA SEM ACEITE E SEM LASTRO COMERCIAL. ENDOSSATÁRIA. ASSUNÇÃO DO RISCO. RESPONSABILIDADE. DANO MORAL. CABIMENTO. VINCULAÇÃO AO SALÁRIO MÍNIMO. INVIABILIDADE.
+O endossatário de duplicata sem aceite e sem lastro comercial assume o risco de ser demandado por eventuais intempéries relacionadas ao título, devendo responder por danos morais. Precedentes.
+[...]
+Recurso especial parcialmente conhecido e, nessa extensão, provido.
+(REsp 592.939/MG, Rel. Ministro CESAR ASFOR ROCHA, QUARTA TURMA, julgado em 17/08/2004, DJ 16/11/2004 p. 297)
+DUPLICATA. Falta de causa. Endosso. Protesto. Anulação. Perdas e danos. Pessoa Jurídica.
+- O banco que recebe por endosso, em operação de desconto, duplicata sem causa, responde pela ação de sustação de protesto e deve indenizar o dano dele decorrente, ressalvado seu direito contra a endossante.
+[...]
+Recurso conhecido pela divergência, mas improvido.
+(REsp 195.842/SP, Rel. Ministro RUY ROSADO DE AGUIAR, QUARTA TURMA, julgado em 11/02/1999, DJ 29/03/1999, p. 188)
+COMERCIAL. DUPLICATA NÃO ACEITA. SUSTAÇÃO DE PROTESTO. ANULAÇÃO. ENDOSSO. DIREITO DE REGRESSO.
+Pode ser sustado o protesto e anulada a duplicata sem aceite que esteja esvaziada de seu conteúdo causal, por não ter sido consumado o negócio subjacente, mas com a ressalva em ordem a assegurar o direito de regresso do endossatário de boa-fé.
+Recurso parcialmente conhecido e, nessa parte, parcialmente provido.
+(REsp 95.605/SP, Rel. Ministro CESAR ASFOR ROCHA, QUARTA TURMA, julgado em 29/10/1998, DJ 01/02/1999, p. 197)
+Endosso. Duplicata sem aceite. Ação de nulidade movida pelo sacado.
+Encargos da sucumbência.
+O endossatário que leva a protesto duplicata não aceita, ainda que isso seja necessário para assegurar direito de regresso, assume o risco de colocar-se como réu, em ação movida pelo sacado e deverá, se vencido, arcar com o pagamento de custas e honorários.
+(REsp 248.275/GO, Rel. Ministro EDUARDO RIBEIRO, TERCEIRA TURMA, julgado em 11/04/2000, DJ 29/05/2000, p. 152)
+No mesmo sentido é a jurisprudência mais recente do STJ:
+AGRAVO REGIMENTAL. AGRAVO DE INSTRUMENTO. RESPONSABILIDADE CIVIL. DUPLICATA. PROTESTO INDEVIDO. ENDOSSO-TRANSLATIVO. DANOS MORAIS CARACTERIZADOS. FIXAÇÃO. RAZOABILIDADE. CORREÇÃO MONETÁRIA. INCIDÊNCIA. ARBITRAMENTO DA VERBA. DECISÃO AGRAVADA MANTIDA. IMPROVIMENTO.
+I. A jurisprudência desta Corte é pacífica ao proclamar que, tratando-se de duplicata irregular, desprovida de causa ou não aceita, hipótese observada no caso em tela, deve o Agravante responder por eventuais danos que tenha causado, em virtude desse protesto, pois, ao encaminhar a protesto título endossado, assume o risco sobre eventuais danos que possam ser causados ao sacado.
+Assim, não há que se falar em exercício regular de direito.
+[...]
+(AgRg no Ag 1.380.089/SP, Rel. Ministro SIDNEI BENETI, TERCEIRA TURMA, julgado em 12/04/2011, DJe 26/04/2011)
+AGRAVO REGIMENTAL NO AGRAVO DE INSTRUMENTO. PROTESTO INDEVIDO DE DUPLICATA. ENDOSSO TRANSLATIVO. RESPONSABILIDADE DA INSTITUIÇÃO FINANCEIRA PELA REPARAÇÃO DOS PREJUÍZOS. PRECEDENTES.
+1. A instituição financeira que recebe duplicata de origem irregular mediante endosso translativo responde pelos danos decorrentes do protesto indevido. Precedentes.
+2. Agravo regimental desprovido.
+(AgRg no Ag 1.211.212/SP, Rel. Ministro JOÃO OTÁVIO DE NORONHA, QUARTA TURMA, julgado em 22/02/2011, DJe 04/03/2011)
+AGRAVO REGIMENTAL. AGRAVO DE INSTRUMENTO. INDENIZAÇÃO. DANOS MORAIS. PROTESTO. DUPLICATA DESPROVIDA DE CAUSA. ENDOSSO. RESPONSABILIDADE. VALOR. RAZOABILIDADE.
+1. O Banco, portador do título, é responsável pela reparação de danos causados ao sacado pelo protesto de duplicata não aceita ou emitida sem vinculação à uma dívida real.
+2. A boa-fé da instituição financeira não afasta a sua responsabilidade, porque, ao levar o título a protesto sem as devidas cautelas, assume o risco sobre eventual prejuízo acarretado a terceiros, alheios à relação entre endossante e endossatário.
+[...]
+(AgRg no Ag 777.258/SP, Rel. Ministro MASSAMI UYEDA, Rel. p/ Acórdão Ministro MASSAMI UYEDA, QUARTA TURMA, julgado em 16/04/2009, DJe 08/06/2009)
+CIVIL E PROCESSUAL. AÇÃO DE INDENIZAÇÃO. PROTESTO INDEVIDO. ENDOSSO TRANSLATIVO. DUPLICATA. EXISTÊNCIA DE DIVERSOS PROTESTOS ANTERIORES. DANO MORAL. VALOR. REDUÇÃO.
+I. Procedendo o banco réu a protesto de duplicata, recebida mediante endosso translativo, torna-se ele responsável pelo ato ilícito causador da lesão, se verificado que a cártula não dispunha de causa à sua emissão, assumindo, pois, o recorrente, o risco negocial.
+[...]
+(REsp 976.591/ES, Rel. Ministro ALDIR PASSARINHO JUNIOR, QUARTA TURMA, julgado em 04/10/2007, DJ 10/12/2007, p. 395)
+Anulação de títulos de crédito. Duplicata. SERASA. Protesto. Danos morais. Endosso. Caução.
+1. A instituição financeira que recebe a duplicata mediante endosso-caução responde pelos danos decorrentes do protesto, já que caberia àquela verificar a causa do título.
+2. Recurso especial não conhecido, por maioria.
+(REsp 397.771/MG, Rel. Ministro ARI PARGENDLER, Rel. p/ Acórdão Ministro CARLOS ALBERTO MENEZES DIREITO, TERCEIRA TURMA, julgado em 02/06/2005, DJ 29/08/2005, p. 328)
+PROCESSUAL CIVIL E BANCÁRIO. AGRAVO REGIMENTAL NO AGRAVO DE INSTRUMENTO. RECURSO ESPECIAL. DUPLICATA. PROTESTO. ENDOSSO TRANSLATIVO. RESPONSABILIDADE DA INSTITUIÇÃO FINANCEIRA PARA RESPONDER POR DEMANDA AJUIZADA PELO SACADO, BEM COMO PELO PAGAMENTO DOS ÔNUS SUCUMBENCIAIS. PRECEDENTES.
+1. A instituição financeira que recebe o título por endosso translativo responde pelo protesto indevido. Precedentes.
+2. Tendo sido reconhecida a responsabilidade do banco pelo protesto indevido, inviável afastar-se sua respectiva sucumbência.
+3. Agravo regimental a que se nega provimento.
+(AgRg no Ag 415.005/SP, Rel. Ministra MARIA ISABEL GALLOTTI, QUARTA TURMA, julgado em 02/08/2011, DJe 12/08/2011)
+3. Com efeito, mantendo a jurisprudência da Casa, a tese que encaminho, para efeito do art. 543-C do CPC, é a seguinte:
+O endossatário que recebe, por endosso translativo, título de crédito contendo vício formal, sendo inexistente a causa para conferir lastro a emissão de duplicata, responde pelos danos causados diante de protesto indevido, ressalvado seu direito de regresso contra os endossantes e avalistas.
+4. No caso concreto, rejeito a alegação de ofensa aos arts. 535 e 458 do CPC, porquanto o acórdão recorrido abordou todos os pontos necessários ao desate da controvérsia.
+No mais, o especial também não prospera.
+Conforme ficou claro na sentença, as duplicatas protestadas não foram aceitas pelo autor, inexistindo também comprovação da entrega das mercadorias.
+Assim, cuida-se de genuínas duplicatas sem causa, cujo recebimento por endosso translativo transfere ao endossatário os riscos de intempéries relativas ao título recebido, inclusive o risco de protesto indevido.
+Confira-se:
+Conforme recibos de intimação acostados às fls. 09/10, os títulos não foram aceitos pelo autor, de modo que, ressaltando a natureza causal da duplicata mercantil, deveria o requerido, quando recebeu os títulos para desconto, ter verificado que a mercadoria negociada foi efetivamente entregue.
+Entretanto, nada há nos autos demonstrando que ao réu Banco do Brasil tenha sido apresentada, na falta de aceite, nota fiscal assinada pelo devedor. (fl. 72)
+Vislumbrando a ocorrência de ato ilícito, o juízo sentenciante condenou o réu ao pagamento de indenização por danos morais no valor de 10 (dez) salários mínimos vigentes à época da sentença, corrigidos monetariamente desde então e acrescidos de juros de mora à razão de 12% ao ano, a contar da data do fato (Súmula n. 54/STJ).
+Essas premissas fáticas foram mantidas pelo acórdão e delas não pode se distanciar esta Corte Superior, sob pena de infringência à Súmula 7/STJ. Com efeito, diante da moldura entregue à instância superior, afiguram-se incensuráveis as decisões de piso.
+5. Diante do exposto, nego provimento ao recurso especial.
+É como voto.

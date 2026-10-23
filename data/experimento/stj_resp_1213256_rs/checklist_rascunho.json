@@ -1,0 +1,29 @@
+{
+  "sujeito": [
+    "endossatario"
+  ],
+  "condicao": [
+    "endosso translativo"
+  ],
+  "tese": [
+    "responde pelos danos",
+    "responsavel pelos danos",
+    "responsabilidade do endossatario",
+    "deve responder"
+  ],
+  "fato": [
+    "protesto indevido"
+  ],
+  "ressalva": [
+    "direito de regresso"
+  ],
+  "dispositivo": [
+    "nego provimento",
+    "negou provimento",
+    "negar provimento",
+    "negaram provimento",
+    "desprovido",
+    "improvido",
+    "nao provido"
+  ]
+}
