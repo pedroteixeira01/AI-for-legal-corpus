@@ -3,6 +3,7 @@ import re
 from functools import lru_cache
 from typing import List
 
+import spacy
 from presidio_analyzer import AnalyzerEngine, Pattern, PatternRecognizer, RecognizerRegistry, RecognizerResult
 from presidio_analyzer.nlp_engine import NlpEngineProvider
 from presidio_anonymizer import AnonymizerEngine
@@ -71,6 +72,12 @@ class LGPDAnonymizer:
         self.ner_ativo = False
 
         try:
+            # Sem o modelo instalado, o Presidio tentaria baixá-lo sozinho, e o spaCy
+            # encerra o processo (SystemExit) se o download falhar. Verificar antes
+            # evita isso e leva direto ao modo degradado.
+            if not spacy.util.is_package(settings.spacy_model):
+                raise OSError(f"modelo spaCy '{settings.spacy_model}' não instalado")
+
             provider = NlpEngineProvider(
                 nlp_configuration={
                     "nlp_engine_name": "spacy",
