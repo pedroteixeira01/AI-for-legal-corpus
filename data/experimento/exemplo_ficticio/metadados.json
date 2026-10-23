@@ -1,0 +1,7 @@
+{
+  "doc_id": "exemplo_ficticio",
+  "tribunal": "TJRJ (fictício)",
+  "numero_processo": "0012345-67.2024.8.19.0001 (fictício)",
+  "ficticio": true,
+  "fonte": "Acórdão fictício de app/core/samples.py, estendido com relatório e voto. Não é decisão real."
+}

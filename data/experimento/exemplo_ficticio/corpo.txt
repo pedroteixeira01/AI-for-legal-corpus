@@ -1,0 +1,54 @@
+PODER JUDICIÁRIO DO ESTADO DO RIO DE JANEIRO - TRIBUNAL DE JUSTIÇA
+APELAÇÃO CÍVEL Nº 0012345-67.2024.8.19.0001. RELATOR: DES. JOÃO DA SILVA.
+APELANTE: BANCO EXEMPLO S.A. (CPF/CNPJ REPRESENTANTE: 123.456.789-00).
+APELADO: MARIA DOS SANTOS (CPF: 987.654.321-11).
+
+RELATÓRIO
+
+Trata-se de apelação cível interposta por Banco Exemplo S.A. contra a sentença proferida pelo Juízo da 3ª Vara Cível da Comarca da Capital, que julgou procedentes os pedidos formulados por Maria dos Santos em ação declaratória de inexistência de débito cumulada com pedido de indenização por danos morais e materiais. A autora narrou, na petição inicial, que é correntista da instituição financeira há mais de dez anos e que recebe, em sua conta corrente, apenas os proventos de sua aposentadoria. Relatou que, ao conferir o extrato bancário do mês de março de 2024, verificou descontos mensais que não reconhecia, relativos a um empréstimo pessoal que jamais contratou.
+
+Segundo a petição inicial, os descontos somavam parcelas sucessivas e comprometiam parte significativa de seu benefício previdenciário. A autora afirmou ter procurado a agência bancária e a central de atendimento, onde foi informada de que o contrato havia sido celebrado por meio eletrônico, com uso de senha pessoal e de dispositivo previamente cadastrado. Registrou boletim de ocorrência por estelionato e notificou extrajudicialmente o banco, sem obter solução administrativa. Diante disso, ajuizou a ação requerendo a declaração de inexistência do débito, a restituição em dobro dos valores descontados e a compensação pelos danos morais sofridos.
+
+Em contestação, o banco sustentou a regularidade da contratação, afirmando que as operações foram realizadas com a senha pessoal da autora e que não houve falha na prestação do serviço. Alegou, ainda, culpa exclusiva de terceiro, que teria praticado a fraude, e a ausência de comprovação de dano moral indenizável, por tratar-se de mero aborrecimento. Subsidiariamente, pediu a redução do valor da indenização e a restituição simples dos valores descontados.
+
+A sentença reconheceu a fraude e declarou a inexistência do débito. Condenou o banco a restituir em dobro os valores indevidamente descontados, na forma do parágrafo único do art. 42 do Código de Defesa do Consumidor, e a pagar à autora indenização por danos morais no valor de R$ 10.000,00 (dez mil reais), corrigida monetariamente a partir do arbitramento e acrescida de juros de mora desde a data do primeiro desconto. O banco foi condenado, ainda, ao pagamento das custas e dos honorários advocatícios, fixados em dez por cento sobre o valor da condenação.
+
+Inconformado, o banco apelou. Nas razões recursais, reiterou a tese de culpa exclusiva de terceiro, afirmou que cumpriu todos os protocolos de segurança exigidos pelo Banco Central do Brasil e insistiu na inexistência de dano moral. Pediu, alternativamente, a redução do quantum indenizatório e a restituição simples dos valores. A apelada apresentou contrarrazões, nas quais pugnou pela manutenção integral da sentença. É o relatório.
+
+VOTO
+
+Presentes os pressupostos de admissibilidade, o recurso deve ser conhecido. Passa-se ao exame do mérito, que gira em torno de três questões: a responsabilidade da instituição financeira pela fraude praticada por terceiros, a configuração do dano moral e a adequação do valor fixado, e, por fim, a forma de restituição dos valores descontados.
+
+I - Da responsabilidade da instituição financeira
+
+A relação jurídica entre as partes é de consumo, aplicando-se o Código de Defesa do Consumidor, nos termos da Súmula 297 do Superior Tribunal de Justiça. Oportuno registrar que a responsabilidade das instituições financeiras é objetiva, nos termos do art. 14 do CDC, bastando a demonstração do defeito na prestação do serviço, do dano e do nexo de causalidade entre ambos. O fornecedor só se exime se provar a inexistência do defeito ou a culpa exclusiva do consumidor ou de terceiro, conforme o § 3º do mesmo dispositivo.
+
+No caso concreto, a alegação de culpa exclusiva de terceiro não merece acolhida. A matéria está pacificada pela Súmula 479 do Superior Tribunal de Justiça, segundo a qual as instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias. O risco do empreendimento abrange as fraudes praticadas por terceiros, configurando fortuito interno, que não afasta o dever de indenizar.
+
+O banco apelante afirma ter observado os protocolos de segurança, mas não trouxe aos autos qualquer elemento capaz de demonstrar que a contratação foi efetivamente realizada pela autora. Não juntou o instrumento contratual, não apresentou registros de acesso que permitissem identificar o dispositivo utilizado nem comprovou o crédito do valor do suposto empréstimo em conta de titularidade da autora. A mera referência ao uso de senha pessoal é insuficiente, pois a segurança do ambiente eletrônico é ônus da instituição financeira, e não do consumidor.
+
+Cumpre destacar, ainda, o perfil da consumidora: pessoa idosa, aposentada, com movimentação bancária modesta e sem histórico de contratação de crédito pessoal. Esse contexto reforça a verossimilhança de suas alegações e a hipossuficiência técnica diante da instituição financeira, o que autoriza a inversão do ônus da prova, nos termos do art. 6º, inciso VIII, do CDC. Era do banco, portanto, o encargo de demonstrar a regularidade da contratação, do qual não se desincumbiu.
+
+II - Do dano moral e do valor da indenização
+
+Quanto ao dano moral, a jurisprudência desta Corte e do Superior Tribunal de Justiça orienta-se no sentido de que descontos indevidos em verba de natureza alimentar, como os proventos de aposentadoria, ultrapassam o mero aborrecimento. Trata-se de dano moral configurado in re ipsa, isto é, que dispensa a prova do prejuízo concreto, ante os transtornos causados à parte autora, que se viu privada de parcela de sua subsistência e precisou enfrentar longa via-crúcis para tentar resolver o problema.
+
+No tocante ao quantum, a fixação da indenização deve observar os princípios da razoabilidade e da proporcionalidade, atentando para a extensão do dano, a capacidade econômica das partes, o caráter pedagógico da condenação e a vedação ao enriquecimento sem causa. A indenização por danos morais não pode ser fonte de lucro, mas também não pode ser irrisória a ponto de não desestimular a reiteração da conduta.
+
+Considerando que os descontos se prolongaram por vários meses, que a autora é pessoa idosa e que o banco é instituição de grande porte, o valor de R$ 10.000,00 (dez mil reais) fixado na sentença mostra-se adequado e compatível com os parâmetros adotados por esta Câmara em casos semelhantes. Não há razão para a redução pretendida. Mantém-se, portanto, o quantum indenizatório, com a correção monetária e os juros de mora nos termos da sentença.
+
+III - Da restituição em dobro
+
+No que se refere à repetição do indébito, o parágrafo único do art. 42 do CDC determina que o consumidor cobrado em quantia indevida tem direito à repetição do indébito, por valor igual ao dobro do que pagou em excesso, acrescido de correção monetária e juros legais, salvo hipótese de engano justificável. O Superior Tribunal de Justiça firmou o entendimento de que a restituição em dobro independe da natureza do elemento volitivo do fornecedor, bastando que a conduta contrária à boa-fé objetiva tenha sido praticada.
+
+Na hipótese, não se verifica engano justificável. O banco realizou descontos reiterados sem comprovar a contratação e manteve a cobrança mesmo após ser notificado extrajudicialmente pela autora. Correta, assim, a sentença ao determinar a restituição em dobro dos valores indevidamente descontados, devendo ser mantida também a declaração de inexistência do débito.
+
+IV - Dos honorários recursais
+
+Em razão do desprovimento do recurso, e nos termos do art. 85, § 11, do Código de Processo Civil, majoram-se os honorários advocatícios de sucumbência de dez para doze por cento sobre o valor da condenação, observados os limites legais.
+
+DISPOSITIVO
+
+Ante o exposto, voto no sentido de conhecer do recurso de apelação e, no mérito, negar-lhe provimento, para manter integralmente a sentença recorrida, inclusive quanto à indenização por danos morais de R$ 10.000,00 (dez mil reais) e à restituição em dobro dos valores indevidamente descontados. NEGA-SE PROVIMENTO AO RECURSO.
+
+É como voto. Os Desembargadores integrantes da Décima Câmara Cível acompanharam o relator, por unanimidade de votos, de modo que o recurso restou desprovido.

@@ -2,6 +2,11 @@
 
 Acórdão fictício de elevada densidade textual, com dados pessoais plantados
 propositalmente para exercitar a camada de anonimização (LGPD).
+
+NÃO é usado no experimento da monografia: o experimento lê os acórdãos reais de
+`data/experimento/` (ver `scripts/run_experiment.py`). A única exceção é a pasta
+`data/experimento/exemplo_ficticio/`, uma versão estendida deste texto que serve
+apenas para validar o fluxo do script com `--backend mock`.
 """
 CORPUS_JURIDICO_EXEMPLO = """
     PODER JUDICIÁRIO DO ESTADO DO RIO DE JANEIRO - TRIBUNAL DE JUSTIÇA
