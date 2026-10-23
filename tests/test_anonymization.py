@@ -58,3 +58,15 @@ def test_nomes_proprios_sao_mascarados_quando_ner_ativo(anonymizer, corpus_jurid
     assert "Maria dos Santos" not in texto_anonimizado
     assert "João da Silva" not in texto_anonimizado
     assert "<PERSON>" in texto_anonimizado
+
+
+@pytest.mark.skipif(not get_anonymizer().ner_ativo, reason="Requer o modelo spaCy pt_core_news_lg instalado")
+def test_sanitizar_nao_emite_avisos_do_presidio(anonymizer, caplog):
+    # O spaCy marca "Superior Tribunal de Justiça" etc. como MISC, entidade que não usamos:
+    # sem labels_to_ignore, cada ocorrência gerava um aviso (milhares por documento real).
+    texto = "O Superior Tribunal de Justiça, por meio da Súmula 479, julgou o Recurso Especial, relatado por Nancy Andrighi."
+
+    with caplog.at_level("WARNING"):
+        anonymizer.sanitizar(texto)
+
+    assert "MISC" not in caplog.text

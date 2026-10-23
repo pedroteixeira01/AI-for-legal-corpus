@@ -14,6 +14,21 @@ logger = logging.getLogger(__name__)
 
 ENTIDADES_LGPD = ["PERSON", "EMAIL_ADDRESS", "PHONE_NUMBER", "BR_CPF"]
 
+# O modelo pt_core_news_lg marca entidades MISC, que o Presidio não mapeia nem usamos
+# (não estão em ENTIDADES_LGPD): sem ignorá-las, ele emite um aviso por ocorrência.
+LABELS_NER_IGNORADOS = ["MISC"]
+
+
+class _SemAvisoDeRecognizerDeOutroIdioma(logging.Filter):
+    """load_predefined_recognizers carrega recognizers de en/es/it/pl e avisa que não os
+    registrou no registry 'pt': é o comportamento esperado, e não uma falha."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        return "Recognizer not added to registry" not in record.getMessage()
+
+
+logging.getLogger("presidio-analyzer").addFilter(_SemAvisoDeRecognizerDeOutroIdioma())
+
 # Regex complementar: cobre CPFs no padrão XXX.XXX.XXX-XX mesmo se o NER falhar
 # em reconhecê-los como PII (camada determinística, sempre executada).
 _REGEX_CPF_PONTUADO = re.compile(r"\b\d{3}\.\d{3}\.\d{3}-\d{2}\b")
@@ -60,6 +75,7 @@ class LGPDAnonymizer:
                 nlp_configuration={
                     "nlp_engine_name": "spacy",
                     "models": [{"lang_code": self._idioma, "model_name": settings.spacy_model}],
+                    "ner_model_configuration": {"labels_to_ignore": LABELS_NER_IGNORADOS},
                 }
             )
             nlp_engine = provider.create_engine()
