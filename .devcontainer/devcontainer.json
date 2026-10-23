@@ -4,7 +4,14 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
   "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--security-opt", "label=disable",
+    "--network=pasta:--map-host-loopback,10.0.2.2",
+    "--add-host=host.containers.internal:10.0.2.2"
+  ],
+  "containerEnv": { "RAMALAMA_URL": "http://host.containers.internal:8080" },
   "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
   "customizations": {
     "vscode": {
