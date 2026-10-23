@@ -1,5 +1,6 @@
 from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 
+from app.chunking.service import get_chunker
 from app.core.samples import CORPUS_JURIDICO_EXEMPLO, REFERENCIA_HUMANA_GOLD
 from app.ingestion.service import processar_upload
 from app.pipeline.schemas import ExemploResponse, PipelineExecutionResult
@@ -27,6 +28,11 @@ async def processar_pipeline(
 
     Aceita exatamente uma fonte de texto: um PDF (`file`) ou texto bruto (`texto`).
     """
+    try:
+        get_chunker(chunk_size=chunk_size, overlap=overlap)  # valida a combinação antes de processar
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
     if file is not None and texto is not None:
         raise HTTPException(status_code=422, detail="Envie apenas um dos dois: 'file' (PDF) ou 'texto', não ambos.")
 

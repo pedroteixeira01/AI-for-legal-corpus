@@ -14,10 +14,10 @@ class LegalDocumentChunk(BaseModel):
 class ChunkRequest(BaseModel):
     texto: str = Field(..., description="Texto já sanitizado a ser segmentado")
     chunk_size: int | None = Field(
-        default=None, gt=0, description="Tamanho da janela em caracteres (padrão: CHUNK_SIZE)"
+        default=None, gt=0, description="Tamanho alvo de cada bloco, em caracteres (padrão: CHUNK_SIZE)"
     )
     overlap: int | None = Field(
-        default=None, ge=0, description="Sobreposição entre janelas consecutivas (padrão: CHUNK_OVERLAP)"
+        default=None, ge=0, description="Sobreposição entre blocos consecutivos, em caracteres (padrão: CHUNK_OVERLAP)"
     )
 
 
