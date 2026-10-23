@@ -18,7 +18,7 @@ from app.chunking.service import LegalChunker
 from app.core.samples import CORPUS_JURIDICO_EXEMPLO, REFERENCIA_HUMANA_GOLD
 from app.evaluation.service import EvaluatorROUGE
 from app.pipeline.schemas import AnonimizacaoInfo, PipelineExecutionResult
-from app.summarization.service import LegalSummarizerLLM
+from app.summarization.service import MockSummarizer
 
 
 def main() -> None:
@@ -39,7 +39,7 @@ def main() -> None:
     for c in lista_chunks:
         print(f"   -> Chunk {c.chunk_id} | Tamanho: {c.tamanho} chars | Start: {c.inicio_char} End: {c.fim_char}")
 
-    llm_engine = LegalSummarizerLLM()
+    llm_engine = MockSummarizer()
     sumario_final = llm_engine.sintetizar_chunks(lista_chunks)
     print("\n[3] Síntese Gerada pelo Modelo:")
     print(sumario_final)

@@ -1,0 +1,9 @@
+Você receberá um trecho de um acórdão judicial brasileiro. Com base exclusivamente no trecho, extraia em tópicos curtos:
+- Tese ou questão jurídica discutida
+- Fundamentos (normas, súmulas e precedentes citados)
+- Valores (condenações, indenizações, multas), exatamente como aparecem
+- Resultado ou dispositivo, se constar
+Se uma informação não constar no trecho, escreva "não consta". Não invente nem complete informações ausentes.
+
+TRECHO:
+{trecho}

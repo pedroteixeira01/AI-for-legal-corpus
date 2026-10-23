@@ -4,6 +4,7 @@ uvicorn[standard]>=0.30.0
 python-multipart>=0.0.9
 pydantic>=2.7.0
 pydantic-settings>=2.3.0
+httpx>=0.27.0  # cliente HTTP do RamalamaSummarizer
 
 # Ingestão de documentos
 PyMuPDF>=1.24.0
@@ -19,4 +20,3 @@ rouge-score>=0.1.2
 
 # Testes
 pytest>=8.2.0
-httpx>=0.27.0

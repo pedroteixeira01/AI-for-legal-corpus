@@ -8,7 +8,7 @@ router = APIRouter(prefix="/summarize", tags=["summarization"])
 
 @router.post("", response_model=SummarizeResponse)
 def sumarizar_chunks(payload: SummarizeRequest) -> SummarizeResponse:
-    """Sintetiza uma lista de chunks (implementação mock — ver BaseSummarizer)."""
+    """Sintetiza uma lista de chunks com o backend configurado em SUMMARIZER_BACKEND (mock ou ramalama)."""
     summarizer = get_summarizer()
     sumario = summarizer.sintetizar_chunks(payload.chunks)
     return SummarizeResponse(sumario_sintetizado=sumario, modelo=summarizer.model_name)
